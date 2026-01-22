@@ -11,12 +11,13 @@ This repository contains configuration for:
 | [nvim](nvim/) | Neovim editor with LSP, Telescope, and modern plugins | [README](nvim/README.md) |
 | [ghostty](ghostty/) | Terminal emulator with theme manager CLI (`term`) | [README](ghostty/README.md) |
 | [zellij](zellij/) | Terminal multiplexer with Claude Code layouts | [README](zellij/README.md) |
-| [zsh](zsh/) | Shell configuration with Powerlevel10k | - |
-| [claude](claude/) | Claude Code CLI settings and statusline | - |
-| [git](git/) | Git configuration | - |
-| [lazygit](lazygit/) | Lazygit TUI configuration | - |
-| [fastfetch](fastfetch/) | System info display | - |
-| [btop](btop/) | Resource monitor | - |
+| [zsh](zsh/) | Shell configuration with Powerlevel10k | [README](zsh/README.md) |
+| [claude](claude/) | Claude Code CLI settings and statusline | [README](claude/README.md) |
+| [git](git/) | Git configuration with conditional identity | [README](git/README.md) |
+| [lazygit](lazygit/) | Lazygit TUI configuration | [README](lazygit/README.md) |
+| [fastfetch](fastfetch/) | System info display | [README](fastfetch/README.md) |
+| [btop](btop/) | Resource monitor with vim keys | [README](btop/README.md) |
+| [zed](zed/) | Zed editor with vim mode | [README](zed/README.md) |
 | [thefuck](thefuck/) | Command correction | - |
 
 ## Quick Start
@@ -97,14 +98,30 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.
 ├── install.sh             # Setup script
 │
 ├── nvim/                  # Neovim (lazy.nvim, LSP, Telescope)
+│   ├── README.md
+│   └── CLAUDE.md
 ├── ghostty/               # Terminal + theme manager CLI
+│   ├── README.md
+│   └── CLAUDE.md
 ├── zellij/                # Multiplexer with Claude layouts
+│   ├── README.md
+│   └── CLAUDE.md
 ├── zsh/                   # Shell config (p10k.zsh)
+│   ├── README.md
+│   └── CLAUDE.md
 ├── claude/                # Claude Code settings
-├── git/                   # Git config
+│   ├── README.md
+│   └── CLAUDE.md
+├── git/                   # Git config (conditional identity)
+│   └── README.md
 ├── lazygit/               # Lazygit config
+│   └── README.md
 ├── fastfetch/             # System info display
+│   └── README.md
 ├── btop/                  # Resource monitor
+│   └── README.md
+├── zed/                   # Zed editor
+│   └── README.md
 └── thefuck/               # Command correction
 ```
 
