@@ -1,0 +1,17 @@
+# Neovim generated files
+.netrwhist
+*.log
+
+# Local plugin development
+/lua/local/
+
+# Session files
+Session.vim
+
+# Backup files
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

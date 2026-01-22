@@ -1,0 +1,64 @@
+{
+  "presets": {
+    "default": {
+      "theme": "Catppuccin Macchiato",
+      "transparency": "none",
+      "blur": "high"
+    },
+    "transparent": {
+      "theme": "Catppuccin Macchiato",
+      "transparency": "medium",
+      "blur": "high"
+    },
+    "cyberpunk": {
+      "theme": "Cyberpunk",
+      "transparency": "high",
+      "blur": "high"
+    },
+    "gruvbox": {
+      "theme": "Gruvbox Dark",
+      "transparency": "medium",
+      "blur": "medium"
+    },
+    "purple": {
+      "theme": "Purplepeter",
+      "transparency": "low",
+      "blur": "high"
+    },
+    "lowkey": {
+      "theme": "Vesper",
+      "transparency": "medium",
+      "blur": "high"
+    },
+    "everblush": {
+      "theme": "Everblush",
+      "transparency": "none",
+      "blur": "off"
+    },
+    "challenger": {
+      "theme": "Challenger Deep",
+      "transparency": "low",
+      "blur": "medium"
+    },
+    "paradiso": {
+      "theme": "Paraiso Dark",
+      "transparency": "none",
+      "blur": "high"
+    },
+    "tokyo": {
+      "theme": "TokyoNight",
+      "transparency": "none",
+      "blur": "high"
+    },
+    "horizon": {
+      "theme": "Horizon",
+      "transparency": "low",
+      "blur": "high"
+    },
+    "dracula": {
+      "theme": "Dracula",
+      "transparency": "low",
+      "blur": "high"
+    }
+  }
+}

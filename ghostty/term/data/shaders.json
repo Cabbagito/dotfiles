@@ -1,0 +1,124 @@
+{
+  "shaders": {
+    "invert": {
+      "name": "Invert",
+      "path": "/Users/peki/.config/ghostty/shaders/negative.glsl",
+      "category": "effects",
+      "description": "Inverts terminal colors for a negative effect"
+    },
+    "crt-classic": {
+      "name": "Classic CRT",
+      "path": "/Users/peki/.config/ghostty/shaders/crt.glsl",
+      "category": "vintage",
+      "description": "Classic CRT monitor with scanlines"
+    },
+    "crt-improved": {
+      "name": "Improved CRT",
+      "path": "/Users/peki/.config/ghostty/shaders/bettercrt.glsl",
+      "category": "vintage",
+      "description": "Enhanced CRT effect with better visuals"
+    },
+    "crt-arcade": {
+      "name": "Arcade CRT",
+      "path": "/Users/peki/.config/ghostty/shaders/in-game-crt.glsl",
+      "category": "vintage",
+      "description": "Arcade-style CRT monitor effect"
+    },
+    "lcd": {
+      "name": "LCD Display",
+      "path": "/Users/peki/.config/ghostty/shaders/tft.glsl",
+      "category": "vintage",
+      "description": "LCD/TFT monitor pixel grid effect"
+    },
+    "pixels": {
+      "name": "Pixel Grid",
+      "path": "/Users/peki/.config/ghostty/shaders/pixels.glsl",
+      "category": "vintage",
+      "description": "Pixelated retro display effect"
+    },
+    "fallout": {
+      "name": "Fallout Terminal",
+      "path": "/Users/peki/.config/ghostty/shaders/retro-terminal.glsl",
+      "category": "effects",
+      "description": "Fallout-style retro terminal with green glow"
+    },
+    "drunk": {
+      "name": "Drunk Mode",
+      "path": "/Users/peki/.config/ghostty/shaders/drunkard.glsl",
+      "category": "effects",
+      "description": "Wavy, distorted vision effect"
+    },
+    "glitch": {
+      "name": "Glitch Effect",
+      "path": "/Users/peki/.config/ghostty/shaders/glitchy.glsl",
+      "category": "effects",
+      "description": "Digital glitches and artifacts"
+    },
+    "snow": {
+      "name": "Snow Effect",
+      "path": "/Users/peki/.config/ghostty/shaders/just-snow.glsl",
+      "category": "effects",
+      "description": "Falling snow animation"
+    },
+    "noise": {
+      "name": "TV Noise",
+      "path": "/Users/peki/.config/ghostty/shaders/mnoise.glsl",
+      "category": "effects",
+      "description": "Static TV noise overlay"
+    },
+    "sine-wave": {
+      "name": "Sine Wave",
+      "path": "/Users/peki/.config/ghostty/shaders/sin-interference.glsl",
+      "category": "effects",
+      "description": "Sine wave interference pattern"
+    },
+    "water": {
+      "name": "Water Ripple",
+      "path": "/Users/peki/.config/ghostty/shaders/water.glsl",
+      "category": "effects",
+      "description": "Underwater ripple effect"
+    },
+    "scanline": {
+      "name": "Scanlines",
+      "path": "/Users/peki/.config/ghostty/shaders/scanline.glsl",
+      "category": "vintage",
+      "description": "Simple scanline overlay"
+    },
+    "bloom": {
+      "name": "Bloom Effect",
+      "path": "/Users/peki/.config/ghostty/shaders/bloom.glsl",
+      "category": "effects",
+      "description": "Glowing bloom effect on bright colors"
+    },
+    "matrix": {
+      "name": "Matrix",
+      "path": "/Users/peki/.config/ghostty/shaders/inside-the-matrix.glsl",
+      "category": "effects",
+      "description": "Matrix digital rain effect"
+    },
+    "gradient": {
+      "name": "Gradient Background",
+      "path": "/Users/peki/.config/ghostty/shaders/gradient-background.glsl",
+      "category": "effects",
+      "description": "Animated gradient background"
+    },
+    "galaxy": {
+      "name": "Galaxy",
+      "path": "/Users/peki/.config/ghostty/shaders/galaxy.glsl",
+      "category": "effects",
+      "description": "Animated galaxy background"
+    },
+    "starfield": {
+      "name": "Starfield",
+      "path": "/Users/peki/.config/ghostty/shaders/starfield.glsl",
+      "category": "effects",
+      "description": "Moving starfield background"
+    },
+    "underwater": {
+      "name": "Underwater",
+      "path": "/Users/peki/.config/ghostty/shaders/underwater.glsl",
+      "category": "effects",
+      "description": "Underwater caustics effect"
+    }
+  }
+}

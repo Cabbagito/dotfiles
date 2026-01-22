@@ -1,0 +1,7 @@
+[user]
+	name = Cabbagito
+	email = petar.kupusarevic@gmail.com
+
+# Include work config for holycode directory
+[includeIf "gitdir:~/Documents/holycode/"]
+	path = ~/.config/git/config-work

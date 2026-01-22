@@ -1,0 +1,30 @@
+title = "giskard"
+# command = "/Users/peki/.cargo/bin/zellij"
+
+window-padding-color = extend
+window-padding-y=0
+window-height = 36
+window-width = 128
+
+
+font-family = MesloLGS NF
+font-size = 21
+
+
+mouse-hide-while-typing = true
+confirm-close-surface = false
+macos-titlebar-style = hidden
+macos-non-native-fullscreen = true
+keybind = shift+enter=text:\n
+
+
+theme = TokyoNight
+
+# 0.85
+background-opacity=0.95
+# 69
+background-blur-radius = 69
+
+
+custom-shader-animation = true
+
