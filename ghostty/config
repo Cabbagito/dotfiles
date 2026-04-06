@@ -18,12 +18,12 @@ macos-non-native-fullscreen = true
 keybind = shift+enter=text:\n
 
 
-theme = TokyoNight
+theme = Challenger Deep
 
 # 0.85
-background-opacity=0.95
+background-opacity=1.0
 # 69
-background-blur-radius = 69
+background-blur-radius = 0
 
 
 custom-shader-animation = true
