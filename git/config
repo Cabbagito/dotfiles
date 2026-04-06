@@ -5,3 +5,24 @@
 # Include work config for holycode directory
 [includeIf "gitdir:~/Documents/holycode/"]
 	path = ~/.config/git/config-work
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = patience
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[push]
+	default = current
+	autoSetupRemote = true
+[merge]
+	stat = true
+	conflictstyle = diff3
+[color]
+	ui = auto
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	lg = log --oneline --graph --decorate --all
