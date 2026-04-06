@@ -133,19 +133,19 @@ layout {
         }
         children
     }
-    tab name=" zsh" focus=true borderless=true {
+    tab name=" term" focus=true borderless=true {
 		pane {
 			command "zsh"
 			args "-c" "fastfetch; exec zsh"
 		}
     }
-    tab name=" vim" borderless=true {
+    tab name=" edit" borderless=true {
 		pane {
 			command "zsh"
 			args "-c" "nvim; zsh"
 		}
     }
-    tab name="󰨈 claude" borderless=true {
+    tab name="󰨈 ai" borderless=true {
 		pane {
 			command "zsh"
 			// args "-c" "ccusage monthly; zsh"
@@ -164,7 +164,13 @@ layout {
 	// 		args "-c" "ctop; zsh"
 	// 	}
 	// }
-	tab name="󰍛 btop" borderless=true {
+	tab name="󰉋 files" borderless=true {
+		pane {
+			command "zsh"
+			args "-ic" "y; zsh"
+		}
+	}
+	tab name="󰍛 sys" borderless=true {
 		pane {
 			command "zsh"
 			args "-c" "btop; zsh"

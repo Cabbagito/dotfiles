@@ -42,9 +42,13 @@ keybinds clear-defaults=true {
         bind "8" { GoToTab 8; SwitchToMode "normal"; }
         bind "9" { GoToTab 9; SwitchToMode "normal"; }
         bind "t" { GoToTab 1; SwitchToMode "normal"; }
-        bind "g" { GoToTab 4; SwitchToMode "normal";}
-        bind "d" { Detach; }
-        bind "b" { GoToTab 6; SwitchToMode "normal";}
+        bind "e" { GoToTab 2; SwitchToMode "normal"; }
+        bind "a" { GoToTab 3; SwitchToMode "normal"; }
+        bind "g" { GoToTab 4; SwitchToMode "normal"; }
+        bind "f" { GoToTab 5; SwitchToMode "normal"; }
+        // bind "d" { Detach; }  // disabled - too easy to hit accidentally among tab shortcuts
+        bind "s" { GoToTab 6; SwitchToMode "normal"; }
+        bind "b" { GoToTab 6; SwitchToMode "normal"; }
         bind "[" { BreakPaneLeft; SwitchToMode "normal"; }
         bind "]" { BreakPaneRight; SwitchToMode "normal"; }
         // bind "b" { BreakPane; SwitchToMode "normal"; }
@@ -58,7 +62,7 @@ keybinds clear-defaults=true {
         bind "L" { MoveTab "right"; }
         bind "n" { NewTab; SwitchToMode "normal"; }
         bind "r" { SwitchToMode "renametab"; TabNameInput 0; }
-        bind "s" { ToggleActiveSyncTab; SwitchToMode "normal"; }
+        // bind "s" { ToggleActiveSyncTab; SwitchToMode "normal"; }
         bind "Ctrl t" { SwitchToMode "normal"; }
         bind "x" { CloseTab; SwitchToMode "normal"; }
         // bind "t" { ToggleTab; SwitchToMode "normal"; }
@@ -160,7 +164,7 @@ keybinds clear-defaults=true {
         // bind "Alt i" { MoveTab "left"; }
         // bind "Alt n" { NewPane; }
         // bind "Alt o" { MoveTab "right"; }
-        bind "Ctrl m" { Quit; }
+        bind "Ctrl m" { Detach; }
     }
     shared_except "locked" "move" {
         // bind "Ctrl h" { SwitchToMode "move"; }
