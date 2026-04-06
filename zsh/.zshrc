@@ -58,6 +58,7 @@ alias vim="nvim"
 alias lg="lazygit"
 alias pwdc="pwd | pbcopy"
 alias claude-yolo="claude --dangerously-skip-permissions"
+alias cy="claude --dangerously-skip-permissions"
 alias me='echo "$(whoami)@$(hostname -s)"'
 alias this='echo "$(whoami)@$(hostname -s)"'
 alias gdu='gdu-go'
@@ -65,7 +66,7 @@ alias ff="fastfetch"
 alias zk="zellij kill-all-sessions -y; zellij delete-all-sessions -y"
 alias zj="zellij kill-session giskard 2>/dev/null; zellij delete-session giskard 2>/dev/null; zellij -s giskard"
 alias term='uv run --directory /Users/peki/.config/ghostty term'
-alias ghost="cd /Users/peki/Documents/ai/ghost && claude-yolo"
+alias ghost="cd /Users/peki/Documents/projects/ghost && claude-yolo"
 # alias cc="zellij -l cc"
 # =============================================================================
 # FUNCTIONS
