@@ -8,7 +8,11 @@ fi
 # =============================================================================
 # CORE SETUP
 # =============================================================================
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ -x /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -22,12 +26,12 @@ export EDITOR=nvim
 export DISABLE_UPDATE_PROMPT=true
 export OMZ_DISABLE_UPDATE_WARNING=true
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="/Users/peki/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "/Users/peki/.bun/_bun" ] && source "/Users/peki/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -35,7 +39,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # opencode
-export PATH=/Users/peki/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 
 # =============================================================================
 # TOOLS INIT
@@ -64,8 +68,8 @@ alias this='echo "$(whoami)@$(hostname -s)"'
 alias gdu='gdu-go'
 alias ff="fastfetch"
 alias zk="zellij kill-all-sessions -y; zellij delete-all-sessions -y"
-alias zj="zellij kill-session giskard 2>/dev/null; zellij delete-session giskard 2>/dev/null; zellij -s giskard"
-alias term='uv run --directory /Users/peki/.config/ghostty term'
+alias zj='_h=$(hostname -s); zellij kill-session $_h 2>/dev/null; zellij delete-session $_h 2>/dev/null; zellij -s $_h'
+alias term='uv run --directory $HOME/.config/ghostty term'
 alias ghost="cd /Users/peki/Documents/projects/ghost && claude-yolo"
 # alias cc="zellij -l cc"
 # =============================================================================
