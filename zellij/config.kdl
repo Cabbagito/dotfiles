@@ -49,6 +49,7 @@ keybinds clear-defaults=true {
         // bind "d" { Detach; }  // disabled - too easy to hit accidentally among tab shortcuts
         bind "s" { GoToTab 6; SwitchToMode "normal"; }
         bind "b" { GoToTab 6; SwitchToMode "normal"; }
+        bind "z" { GoToTab 7; SwitchToMode "normal"; }
         bind "[" { BreakPaneLeft; SwitchToMode "normal"; }
         bind "]" { BreakPaneRight; SwitchToMode "normal"; }
         // bind "b" { BreakPane; SwitchToMode "normal"; }

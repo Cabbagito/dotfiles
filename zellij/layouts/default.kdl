@@ -176,6 +176,12 @@ layout {
 			args "-c" "btop; zsh"
 		}
 	}
+	tab name="󰚀 zen" borderless=true {
+		pane {
+			command "zsh"
+			args "-c" "zen; zsh"
+		}
+	}
     
 }
 keybinds {

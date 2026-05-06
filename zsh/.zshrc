@@ -68,7 +68,7 @@ alias this='echo "$(whoami)@$(hostname -s)"'
 alias gdu='gdu-go'
 alias ff="fastfetch"
 alias zk="zellij kill-all-sessions -y; zellij delete-all-sessions -y"
-alias zj='_h=$(hostname -s); zellij kill-session $_h 2>/dev/null; zellij delete-session $_h 2>/dev/null; zellij -s $_h'
+alias zj='zellij kill-all-sessions -y >/dev/null 2>&1; zellij delete-all-sessions -y >/dev/null 2>&1; clear; _h=$(hostname -s); zellij -s $_h'
 alias term='uv run --directory $HOME/.config/ghostty term'
 alias ghost="cd /Users/peki/Documents/projects/ghost && claude-yolo"
 # alias cc="zellij -l cc"

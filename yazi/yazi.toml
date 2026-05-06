@@ -1,0 +1,14 @@
+[opener]
+comic = [
+  { run = 'open -a "YACReader" "$@"', orphan = true, desc = "YACReader" },
+]
+preview = [
+  { run = 'open -a "Preview" "$@"', orphan = true, desc = "Preview" },
+]
+
+[open]
+prepend_rules = [
+  { url = "*.cbz", use = "comic" },
+  { url = "*.cbr", use = "comic" },
+  { url = "*.pdf", use = ["preview", "comic"] },
+]
