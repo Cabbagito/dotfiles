@@ -20,9 +20,13 @@
   "preferredNotifChannel": "ghostty",
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
   "voiceEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754039736284
   },
-  "skipAutoPermissionPrompt": true
+  "inputNeededNotifEnabled": true,
+  "attribution": {
+    "commit": ""
+  }
 }
