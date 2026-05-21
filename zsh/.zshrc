@@ -63,6 +63,7 @@ alias lg="lazygit"
 alias pwdc="pwd | pbcopy"
 alias claude-yolo="claude --dangerously-skip-permissions"
 alias cy="claude --dangerously-skip-permissions"
+alias ca="claude agents"
 alias me='echo "$(whoami)@$(hostname -s)"'
 alias this='echo "$(whoami)@$(hostname -s)"'
 alias gdu='gdu-go'
