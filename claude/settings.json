@@ -25,13 +25,14 @@
   "editorMode": "normal",
   "verbose": false,
   "preferredNotifChannel": "ghostty",
-  "autoScrollEnabled": true,
+  "autoScrollEnabled": false,
   "remoteControlAtStartup": true,
   "inputNeededNotifEnabled": true,
   "agentPushNotifEnabled": true,
   "skipAutoPermissionPrompt": true,
   "useAutoModeDuringPlan": true,
   "voiceEnabled": true,
+  "leftArrowOpensAgents": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754039736284
   },
