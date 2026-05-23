@@ -1,14 +1,17 @@
 [opener]
-comic = [
-  { run = 'open -a "YACReader" "$@"', orphan = true, desc = "YACReader" },
+yacreader = [
+  { run = '/Applications/YACReader.app/Contents/MacOS/YACReader %s', orphan = true, desc = "YACReader" },
 ]
 preview = [
-  { run = 'open -a "Preview" "$@"', orphan = true, desc = "Preview" },
+  { run = 'open -a "Preview" %s', orphan = true, desc = "Preview" },
 ]
 
 [open]
 prepend_rules = [
-  { url = "*.cbz", use = "comic" },
-  { url = "*.cbr", use = "comic" },
-  { url = "*.pdf", use = ["preview", "comic"] },
+  { mime = "application/vnd.comicbook+zip", use = "yacreader" },
+  { mime = "application/vnd.comicbook-rar", use = "yacreader" },
+  { url = "*.cbz", use = "yacreader" },
+  { url = "*.cbr", use = "yacreader" },
+  { mime = "application/pdf", use = ["preview", "yacreader"] },
+  { url = "*.pdf", use = ["preview", "yacreader"] },
 ]
