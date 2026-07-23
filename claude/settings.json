@@ -36,5 +36,6 @@
   "feedbackSurveyState": {
     "lastShownTime": 1754039736284
   },
-  "agentViewOpenOnStartup": false
+  "agentViewOpenOnStartup": false,
+  "model": "fable"
 }
