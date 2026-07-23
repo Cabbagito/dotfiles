@@ -5,13 +5,27 @@ yacreader = [
 preview = [
   { run = 'open -a "Preview" %s', orphan = true, desc = "Preview" },
 ]
+gapplin = [
+  { run = 'open -a "Gapplin" %s', orphan = true, desc = "Gapplin" },
+]
+chrome = [
+  { run = 'open -a "Google Chrome" %s', orphan = true, desc = "Chrome" },
+]
+nvim = [
+  { run = 'nvim %s', block = true, desc = "Neovim" },
+]
+reveal = [
+  { run = 'open -R %s', desc = "Reveal" },
+]
 
 [open]
 prepend_rules = [
-  { mime = "application/vnd.comicbook+zip", use = "yacreader" },
-  { mime = "application/vnd.comicbook-rar", use = "yacreader" },
-  { url = "*.cbz", use = "yacreader" },
-  { url = "*.cbr", use = "yacreader" },
-  { mime = "application/pdf", use = ["preview", "yacreader"] },
-  { url = "*.pdf", use = ["preview", "yacreader"] },
+  { mime = "application/vnd.comicbook+zip", use = ["yacreader", "reveal"] },
+  { mime = "application/vnd.comicbook-rar", use = ["yacreader", "reveal"] },
+  { url = "*.cbz", use = ["yacreader", "reveal"] },
+  { url = "*.cbr", use = ["yacreader", "reveal"] },
+  { mime = "application/pdf", use = ["preview", "yacreader", "reveal"] },
+  { url = "*.pdf", use = ["preview", "yacreader", "reveal"] },
+  { mime = "image/svg+xml", use = ["gapplin", "chrome", "nvim", "reveal"] },
+  { url = "*.svg", use = ["gapplin", "chrome", "nvim", "reveal"] },
 ]
